@@ -72,5 +72,6 @@ dependencies {
 
 // For interop APIs with Material 2
     implementation ("androidx.glance:glance-material:1.1.0")
+    implementation("androidx.compose.material3:material3:1.1.0")
 
 }
