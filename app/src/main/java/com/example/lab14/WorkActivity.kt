@@ -9,7 +9,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 
-class MainActivity : ComponentActivity() {
+class WorkActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
@@ -25,12 +25,12 @@ class MainActivity : ComponentActivity() {
                         verticalArrangement = Arrangement.Center,
                         horizontalAlignment = Alignment.CenterHorizontally
                     ) {
-                        Text(text = "🏠 Bienvenido a la pantalla principal", style = MaterialTheme.typography.headlineSmall)
+                        Text(text = "💼 Bienvenido a WorkActivity", style = MaterialTheme.typography.headlineSmall)
                         Spacer(modifier = Modifier.height(12.dp))
-                        Text(text = "Esta es la vista principal de tu app.")
+                        Text(text = "Aquí puedes gestionar tareas relacionadas al trabajo.")
                         Spacer(modifier = Modifier.height(24.dp))
                         Button(onClick = { /* Acción futura */ }) {
-                            Text("Ir a otra sección")
+                            Text("Crear nueva tarea")
                         }
                     }
                 }
